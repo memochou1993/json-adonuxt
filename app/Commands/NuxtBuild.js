@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 
-const { Command } = use('@adonisjs/ace')
-const Config = use('Config')
-const { Nuxt, Builder } = require('nuxt')
+const { Command } = use('@adonisjs/ace');
+const Config = use('Config');
+const { Nuxt, Builder } = require('nuxt');
 
 class NuxtBuild extends Command {
   /**
@@ -12,7 +12,7 @@ class NuxtBuild extends Command {
    * @return {String}
    */
   static get signature() {
-    return 'nuxtbuild'
+    return 'nuxtbuild';
   }
 
   /**
@@ -22,7 +22,7 @@ class NuxtBuild extends Command {
    * @return {String}
    */
   static get description() {
-    return 'Build for production the nuxt.js application.'
+    return 'Build for production the nuxt.js application.';
   }
 
   /**
@@ -33,12 +33,12 @@ class NuxtBuild extends Command {
    * @param  {Object} options [description]
    */
   async handle(args, options) {
-    const config = Config.get('nuxt')
-    config.dev = false
-    this.nuxt = new Nuxt(config)
-    this.info('Building nuxt.js application...')
-    await new Builder(this.nuxt).build()
+    const config = Config.get('nuxt');
+    config.dev = false;
+    this.nuxt = new Nuxt(config);
+    this.info('Building nuxt.js application...');
+    await new Builder(this.nuxt).build();
   }
 }
 
-module.exports = NuxtBuild
+module.exports = NuxtBuild;

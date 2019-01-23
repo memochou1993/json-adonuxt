@@ -24,6 +24,7 @@ module.exports = {
     'no-param-reassign': ['error', { props: false }],
     'space-before-function-paren': ['error', { named: 'never' }],
     'strict': 0,
+    'prefer-destructuring': ['error', { 'AssignmentExpression': { 'object': true } }],
   },
   globals: {
     use: true,
