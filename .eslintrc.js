@@ -20,6 +20,7 @@ module.exports = {
     'class-methods-use-this': 'off',
     'global-require': 'off',
     'import/no-unresolved': 'off',
+    'no-trailing-spaces': 'off',
     'no-multi-assign': 'off',
     'no-param-reassign': ['error', { props: false }],
     'space-before-function-paren': ['error', { named: 'never' }],

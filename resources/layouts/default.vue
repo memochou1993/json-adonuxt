@@ -1,19 +1,31 @@
 <template>
-  <v-app>
-    <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-content>
-  </v-app>
+  <div>
+    <v-app>
+      <TheToolbar />
+      <v-content>
+        <v-container
+          fluid
+          fill-height
+        >
+          <v-flex>
+            <nuxt />
+          </v-flex>
+        </v-container>
+      </v-content>
+      <TheFooter />
+    </v-app>
+  </div>
 </template>
 
 <script>
+import TheToolbar from '@/components/TheToolbar.vue';
+import TheFooter from '@/components/TheFooter.vue';
+
 export default {
-  data() {
-    return {
-      //
-    };
+  name: 'App',
+  components: {
+    TheToolbar,
+    TheFooter,
   },
 };
 </script>

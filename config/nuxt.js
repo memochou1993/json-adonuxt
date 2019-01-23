@@ -38,6 +38,9 @@ module.exports = {
   */
   css: [
     '~/assets/style/app.styl',
+    'jsoneditor/dist/jsoneditor.css',
+    '~/assets/style/jsoneditor.styl',
+    '@fortawesome/fontawesome-free/css/all.css',
   ],
 
   /*
